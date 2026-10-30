@@ -1,0 +1,17 @@
+{
+  "name": "finora",
+  "version": "1.0.0-day1",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "npm --prefix server run dev",
+    "dev:web": "npm --prefix client run dev",
+    "db:migrate": "npm --prefix server run db:migrate",
+    "db:reset": "npm --prefix server run db:reset",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
