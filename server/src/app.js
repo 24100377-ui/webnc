@@ -7,6 +7,7 @@ import { env } from './config/env.js';
 import { pingDatabase } from './config/db.js';
 import { errorHandler } from './middleware/validate.js';
 import authRoutes from './routes/auth.routes.js';
+import transactionRoutes from './routes/transactions.routes.js';
 
 export const app = express();
 
@@ -32,6 +33,7 @@ app.get('/api/health', async (_req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/transactions', transactionRoutes);
 
 app.use((_req, res) => {
   res.status(404).json({ error: { message: 'Không tìm thấy đường dẫn' } });
