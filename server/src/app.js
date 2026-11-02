@@ -9,6 +9,7 @@ import { errorHandler } from './middleware/validate.js';
 import authRoutes from './routes/auth.routes.js';
 import transactionRoutes from './routes/transactions.routes.js';
 import budgetRoutes from './routes/budgets.routes.js';
+import financeRoutes from './routes/finance.routes.js';
 
 export const app = express();
 
@@ -36,6 +37,7 @@ app.get('/api/health', async (_req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/transactions', transactionRoutes);
 app.use('/api/budgets', budgetRoutes);
+app.use('/api', financeRoutes);
 
 app.use((_req, res) => {
   res.status(404).json({ error: { message: 'Không tìm thấy đường dẫn' } });

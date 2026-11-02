@@ -6,7 +6,7 @@ export function getStoredTheme() {
 }
 
 export function applyTheme(theme) {
-  document.documentElement.classList.toggle('dark', theme === 'dark');
+  document.documentElement.classList.toggle('dark', theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches));
 }
 
 export function saveTheme(theme) {
