@@ -1,17 +1,17 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import AppLayout from './components/layout/AppLayout';
-import ProtectedRoute from './components/ProtectedRoute';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Dashboard from './pages/Dashboard';
-import Transactions from './pages/Transactions';
-import Budgets from './pages/Budgets';
-import Accounts from './pages/Accounts';
-import Savings from './pages/Savings';
-import Reports from './pages/Reports';
-import Goals from './pages/Goals';
-import Bills from './pages/Bills';
-import Settings from './pages/Settings';
+import { Navigate, Route, Routes } from "react-router-dom";
+import AppLayout from "./components/layout/AppLayout";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
+import Transactions from "./pages/Transactions";
+import Budgets from "./pages/Budgets";
+import Accounts from "./pages/Accounts";
+import Savings from "./pages/Savings";
+import Reports from "./pages/Reports";
+import Goals from "./pages/Goals";
+import Bills from "./pages/Bills";
+import Settings from "./pages/Settings";
 
 export default function App() {
   return (

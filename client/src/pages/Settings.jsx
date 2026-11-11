@@ -1,1 +1,1 @@
-export { Settings as default } from './FinancePages';
+export { Settings as default } from "./FinancePages";

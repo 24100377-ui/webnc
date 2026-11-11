@@ -1,1 +1,4 @@
-import { GoalPage } from './FinancePages'; export default function Savings(){ return <GoalPage kind='savings' />; }
+import { GoalPage } from "./FinancePages";
+export default function Savings() {
+  return <GoalPage kind="savings" />;
+}

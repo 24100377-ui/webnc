@@ -1,1 +1,1 @@
-export { Accounts as default } from './FinancePages';
+export { Accounts as default } from "./FinancePages";
